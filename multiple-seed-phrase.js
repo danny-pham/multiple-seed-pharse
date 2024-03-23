@@ -6,18 +6,15 @@ function generateMultipleSeedPhrases(count) {
         let generatedCount = 0;
 
         function generateNextSeedPhrase() {
-            seedPhraseGenerator.generateSeedPhrase().then(seedPhrase => {
-                seedPhrases.push(seedPhrase);
-                generatedCount++;
+            const seedPhrase = seedPhraseGenerator.generateSeedPhrase(); // Không sử dụng async/await
+            seedPhrases.push(seedPhrase);
+            generatedCount++;
 
-                if (generatedCount === count) {
-                    resolve(seedPhrases);
-                } else {
-                    generateNextSeedPhrase();
-                }
-            }).catch(error => {
-                reject(error);
-            });
+            if (generatedCount === count) {
+                resolve(seedPhrases);
+            } else {
+                generateNextSeedPhrase();
+            }
         }
 
         generateNextSeedPhrase();

@@ -1,0 +1,31 @@
+{
+    "name": "multiple-seed-phrase",
+    "version": "1.0.0",
+    "description": "Multiple Seed Phrase",
+    "main": "multiple-seed.js",
+    "scripts": {
+      "test": "echo \"No test specified\" && exit 0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/danny-pham/multiple-seed-phrase.git"
+    },
+    "keywords": [
+      "multiple",
+      "seed",
+      "pharse",
+      "crypto",
+      "wallet"
+    ],
+    "author": "danny-pham",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/danny-pham/multiple-seed-phrase/issues"
+    },
+    "homepage": "https://github.com/danny-pham/multiple-seed-phrase#readme",
+    "dependencies": {
+      "seed-phrase-generator": "^1.2.7"
+    },
+    "devDependencies": {}
+  }
+  
